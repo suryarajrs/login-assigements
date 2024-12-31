@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        nav {
+            background-color: aliceblue;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 0px;
+        }
+
+        .search-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+        .search {
+            display: flex;
+            justify-content: center;
+
+        }
+
+
+        .search-bar {
+            width: 600px;
+            padding: 10px;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .dropdowns {
+            display: flex;
+            justify-content: space-around;
+            /* background-color: red; */
+            padding: 15px;
+            width: 30%;
+            gap: 15px;
+        }
+
+        .card-container{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 0 auto;
+            max-width: 75%;
+            /* background-color: red; */
+        }
+
+        .card {
+            width: 180px;
+            margin: 10px;
+            padding: 20px;
+            background-color: #f2f2f2;
+            border-radius: 5px;
+            
+        }
+
+        .card img {
+            width:   180px;
+            height: 195px;
+            border-radius: 5px;
+           
+        }
+
+        .card h2 {
+            margin-top: 0px;
+            margin-bottom: 0px;
+           
+        }
+
+        .card p {
+            margin-top: 5px;
+
+        }
+
+        .card button {
+            /* background-color: #4CAF50; */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <h1>Book My Show</h1>
+
+    <div class="search-section">
+
+        <div class="search">
+            <input type="text" class="search-bar" placeholder="Search movies" />
+        </div>
+
+        <div class="dropdowns">
+            <label for="color-dropdown">Choose a color:</label>
+            <select id="color-dropdown" class="colorDropdown">
+                <option value="all">all</option>
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+                <option value="orange">Orange</option>
+                <option value="purple">Purple</option>
+                <option value="brown">Brown</option>
+                <option value="grey">Grey</option>
+            </select>
+
+            <label for="color-dropdown">Filter a year:</label>
+            <select id="color-dropdown" class="yearDropdown">
+
+                <option value="all">all</option>
+                <option value="2024">2024</option>
+                <option value="2023">2023</option>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+                <option value="2020">2020</option>
+              
+            </select>
+        </div>
+
+    </div>
+
+
+
+
+
+    <div class="card-container" id="card-container">
+
+
+    </div>
+
+
+    <script src="./index.js"></script>
+</body>
+
+</html>

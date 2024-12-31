@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Supermarket Bill Calculation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="card">
+    <h1 class="title">WELCOME TO SUPER MARKET</h1>
+
+    <!-- Customer Details -->
+    <div class="customer-details">
+      <label for="customer-name">Customer Name:</label>
+      <input type="text" id="customer-name" placeholder="Enter Name" />
+
+      <label for="bill-no">Bill No:</label>
+      <input type="text" id="bill-no" placeholder="Enter Bill Number" />
+
+      <label for="date-time">Date & Time:</label>
+      <input type="datetime-local" id="date-time" />
+    </div>
+
+    <!-- Product Details -->
+    <h2>Customer Product Entry</h2>
+    <table id="product-table">
+      <thead>
+        <tr>
+          <th>Products</th>
+          <th>Quantity</th>
+          <th>Rate</th>
+          <th>Subtotal</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- 5 Default Rows -->
+        <tr>
+          <td><input type="text" placeholder="Enter product"></td>
+          <td><input type="number" placeholder="Quantity"></td>
+          <td><input type="number" placeholder="Rate"></td>
+          <td class="subtotal">0.00</td>
+        </tr>
+        <tr>
+          <td><input type="text" placeholder="Enter product"></td>
+          <td><input type="number" placeholder="Quantity"></td>
+          <td><input type="number" placeholder="Rate"></td>
+          <td class="subtotal">0.00</td>
+        </tr>
+        <tr>
+          <td><input type="text" placeholder="Enter product"></td>
+          <td><input type="number" placeholder="Quantity"></td>
+          <td><input type="number" placeholder="Rate"></td>
+          <td class="subtotal">0.00</td>
+        </tr>
+        <tr>
+          <td><input type="text" placeholder="Enter product"></td>
+          <td><input type="number" placeholder="Quantity"></td>
+          <td><input type="number" placeholder="Rate"></td>
+          <td class="subtotal">0.00</td>
+        </tr>
+        <tr>
+          <td><input type="text" placeholder="Enter product"></td>
+          <td><input type="number" placeholder="Quantity"></td>
+          <td><input type="number" placeholder="Rate"></td>
+          <td class="subtotal">0.00</td>
+        </tr>
+      </tbody>
+    </table>
+    <button type="button" id="calculate-bill" class="btn">Calculate Bill</button>
+
+    <!-- Bill Summary -->
+    <div class="bill-summary">
+      <h3>Bill Amount</h3>
+      <p>Customer Name: <span id="summary-name">N/A</span></p>
+      <p>Date & Time: <span id="summary-datetime">N/A</span></p>
+      <p>Total Amount: $<span id="total-amount">0.00</span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

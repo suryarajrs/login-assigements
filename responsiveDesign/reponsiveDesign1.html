@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* height: 100vh; */
+            padding: 20px;
+            background-color: #f3f3f3;;
+        }
+
+        .container {
+            /* background-color: red; */
+            max-width: 1100px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 450px 180px;
+            grid-template-areas: 'contact contacts map map'
+                'pets about quick newsletter';
+            gap: 10px;
+        }
+
+        .Contact-us {
+            grid-area: contact;
+            background-color: white;
+            border-radius: 10px;
+            padding: 10px;
+           
+        }
+
+        #map {
+            grid-area: map;
+            background-color: white;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        #pets {
+            grid-area: pets;
+            background-color: white;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        #about {
+            grid-area: about;
+            background-color: white;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        #quick-links {
+            grid-area: quick;
+            background-color: white;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        #newsletter {
+            grid-area: newsletter;
+            background-color: white;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+
+
+        .Contact-us {
+            grid-column-start: 1;
+            grid-column-end: 3;
+
+        }
+
+
+        .social-media {
+            display: flex;
+            gap: 10px;
+
+        }
+
+        .item-container {
+            padding: 10px;
+            background-color: orangered;
+            border-radius: 50%;
+        }
+
+        .newsletter {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .newsletter input {
+            padding: 10px 25px;
+            border-radius: 25px;
+            text-align: center;
+            margin-bottom: 8px;
+        }
+
+        .newsletter button {
+            padding: 15px 25px;
+            border-radius: 25px;
+            text-align: center;
+            background-color: orangered;
+        }
+
+        @media(max-width:1050px) {
+
+            .container {
+                max-width: 830px;
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: 450px 180px;
+                grid-template-areas: 'contact contacts map map'
+                    'newsletter newsletter about about '
+                    'quick quick pets pets';
+            }
+
+        }
+        @media(max-width:855px) {
+
+            .container {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows:  300px  320px  180px;
+                grid-template-areas: 'contact contacts pets'
+                    'map map map'
+                    'quick about newsletter';
+            }
+
+        }
+        @media(max-width:690px) {
+
+            .container {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows:  300px  300px  180px 180px;
+                grid-template-areas: 'contact contacts'
+                    'map map'
+                    'pets quick'
+                     'about newsletter';
+            }
+
+        }
+        @media(max-width:450px) {
+
+            .container {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows:  350px  400px  130px 180px 180px 180px;
+                grid-template-areas: 'contact'
+                    'map'
+                    'pets'
+                     'about'
+                      'quick'
+                      'newsletter';
+                text-align: center;
+            }
+            .social-media {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+
+
+        }
+         .Contact-us {
+            grid-column-start: auto;
+            grid-column-end: auto;
+
+        }
+         
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+
+        <div class="container">
+            <div id="Contact-us" class="Contact-us">
+                <h2>Contact Us</h2>
+
+                <h4 style="color: orangered;"><i style="color: lawngreen;" class="fa-solid fa-stopwatch fa-xl"></i> From
+                    8 To 10 am</h4>
+                <p>Lorem ipsum doetur adipisicing elit. Laudantium nobis nemo recusandae sed beatae
+                    fuga, cumque incidunt nulla, atque</p>
+
+                <h4 style="color: orangered;"><i style="color: rgb(24, 220, 24); margin-right: 5px;"
+                        class="fa-solid fa-earth-americas fa-xl"></i>Favourite Toys</h4>
+                <p>Lorem ipsum dolor sit amet  elit. Aliquid magni velit saepe ducimus. Minus
+                    possimus voluptas quod debitis at velit.</p>
+            </div>
+
+            <div id="map" class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.966715784272!2d80.21652267571473!3d12.973980687341678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525d3154bf18fb%3A0x706bf6b0e2157ca9!2sLogin360!5e0!3m2!1sen!2sin!4v1731874950253!5m2!1sen!2sin"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+
+            <div id="pets" class="pets">
+                <h3> <i style="color: orangered; margin-right: 10px;" class="fa-solid fa-paw fa-xl"></i>PetsM4</h3>
+
+                <div class="social-media">
+                    <div class="item-container">
+                        <i class="fa-brands fa-xl fa-twitter"></i>
+
+                    </div>
+                    <div class="item-container">
+
+                        <i class="fa-brands fa-xl fa-instagram"></i>
+                    </div>
+
+                    <div class="item-container">
+                        <i class="fa-brands fa-xl fa-youtube"></i>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div id="about" class="about">
+                <h4 style="color: orangered;">Abouts</h4>
+                <p>PO Box Colins Street West</p>
+                <p>+23334451642</p>
+                <p>Mon-Sun:8AM-8PM</p>
+            </div>
+
+            <div id="quick-links" class="quick-links">
+                <h4 style="color: orangered;">Quick Links</h4>
+                <p>Dog Boarding Service</p>
+                <p>Cat Boarding Service</p>
+                <p>Spa and Grooming Service</p>
+            </div>
+            <div id="newsletter" class="newsletter">
+                <h4 style="color: orangered;">NewsLetter</h4>
+                <input type="text" placeholder="Your Email" />
+                <button>SUBSCRIBE</button>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    
+    align-items: center;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 81%;
+    width: 40%;
+    border: 5px double rgb(226, 187, 135);
+    background-color: rgb(15,13,14);
+    
+}
+
+.form-container {
+    color: rgb(226, 187, 135);
+    padding: 10px 20px 10px 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    background-color: transparent;
+    border: 2px solid rgb(226, 187, 135);
+    padding: 12px 15px 12px 15px;
+    border-radius: 25px;
+    margin-bottom: 15px;
+    color: white;
+    width: 85%;
+}
+
+.img-container {
+    max-width: 320px;
+}
+
+#Register-btn {
+    padding: 10px 35px 10px 35px;
+    background-color: rgb(221, 22, 61);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    margin: 10px 0px 10px 0px;
+}
+
+.radio-container {
+    display: inline-flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.checkbox-container {
+    display: flex;
+    padding-left: 22px;
+}
+.checkbox-container input {
+    width: auto;
+    margin-right: 10px;
+}
+
+.phone-input {
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+    padding: 0px 5px;
+    width: 85%;
+    border: 2px solid rgb(226, 187, 135);
+    margin-bottom: 15px;
+
+}
+
+.phone-input select {
+    border: none;
+    font-size: 16px;
+    outline: none;
+    padding: 10px;
+    margin-right: 10px;
+    text-align: center;
+    background-color: transparent;
+    color: white;
+}
+
+.phone-input input[type="tel"] {
+    border: none;
+    font-size: 16px;
+    outline: none;
+    padding: 11px;
+    margin-bottom: 0px;
+}

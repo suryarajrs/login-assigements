@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            background-image: url('./images/basketbal.png');
+            background-size: contain;
+            background-repeat: no-repeat;   
+            background-position: center;
+            position: relative;
+           
+        }
+
+        img{
+            position: absolute;
+            width: 250px;
+            height: 250px;
+            left: 46%;
+            top: 65%;
+
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%{
+                transform: translateY(0) rotate(10deg);
+            }
+            50%{
+                transform: translateY(-500px) rotate(260deg) ;
+            }
+            100%{
+                transform: translateY(0) rotate(360deg);
+            }
+          
+        }
+    </style>
+</head>
+
+<body>
+ <img src="./images/basketball-emoji.png" />
+</body>

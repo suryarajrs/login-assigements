@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsiveCards</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            text-align: center;
+            background: linear-gradient(#4E65FF, #92EFFD);
+
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            padding: 0px 25px 0px 25px;
+        }
+
+        .card {
+            display: flex;
+            background-color: white;
+            /* width: 40%; */
+            border-radius: 8px;
+            overflow: hidden;
+            height: 300px;
+        }
+
+        .hidden-card {
+            display: none;
+            background-color: red;
+            width: 260px;
+            height: 100%;
+            margin: auto;
+            border-radius: 12px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .hidden-card img {
+            height: 100%;
+            width: 100%;
+        }
+
+        .hidden-card .overlay {
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            width: 100%;
+            height: 150px;
+            background-color: rgba(128, 128, 130, 0.6);
+            border-radius: 10px;
+            /* padding: 10px 0px 10px 0px; */
+        }
+
+        .hidden-card .icons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .description {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: white;
+            width: 100%;
+        }
+
+        .image-container {
+            border-right: 8px double red;
+            width: 40%;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .social {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 270px;
+            height: 90px;
+        }
+
+        .about {
+            h1 {
+                font-size: 47px;
+                margin-bottom: 0px;
+            }
+        }
+
+        .para {
+            margin-top: 0px;
+            letter-spacing: 4px;
+        }
+
+        .facebook {
+            padding: 8px 0px 8px 0px;
+            width: 110px;
+            color: white;
+            background-color: blue;
+            border-radius: 5px;
+            border: none;
+        }
+
+        .linkdin {
+            padding: 8px 0px 8px 0px;
+            width: 110px;
+            color: white;
+            background-color: cornflowerblue;
+            border-radius: 5px;
+            border: none;
+        }
+
+        .instagram {
+            padding: 8px 0px 8px 0px;
+            width: 110px;
+            color: white;
+            background-color: orange;
+            border-radius: 5px;
+            border: none;
+        }
+
+        .twitter {
+            padding: 8px 0px 8px 0px;
+            width: 110px;
+            color: white;
+            background-color: black;
+            border-radius: 5px;
+            border: none;
+        }
+
+        @media(max-width:1300px) {
+            .container {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 30px;
+                padding: 0px 25px 0px 25px;
+            }
+        }
+
+        @media(max-width:620px) {
+            .card {
+                display: none;
+            }
+
+            .hidden-card {
+                display: block;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>--Our Team--</h1>
+    <div class="container">
+
+        <div class="card-container">
+            <div class="card">
+                <div class="image-container">
+                    <img src="./images/products1.png">
+                </div>
+                <div class="description">
+                    <div class="about">
+                        <h1>Vishal</h1>
+                        <p class="para">---Full Stack Developer---</p>
+                        <p>Hi,im full stack developer i used to create dynamic website</p>
+                    </div>
+                    <div class="social">
+                        <button class="linkdin">Linked in <i class="fa-brands fa-linkedin"></i></button>
+                        <button class="twitter">Twitter <i class="fa-brands fa-x-twitter"></i></button>
+                        <button class="instagram">Instagram <i class="fa-brands fa-instagram"></i></button>
+                        <button class="facebook">Facebook <i class="fa-brands fa-facebook"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hidden-card">
+
+                <img src="./images/products1.png" />
+                <div class="overlay">
+                    <h2 style="margin-bottom: 0px;">Vishal</h2>
+                    <h5 style="margin-top: 5px;">---Full Stack Developer---</h5>
+                    <div class="icons">
+                        <div
+                            style="background-color: blue; padding: 10px; border-radius: 50%; display: flex; justify-content: center;align-items: center; color: white;">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </div>
+                        <div
+                            style="background-color: black; padding: 10px; border-radius: 50%; display: flex; justify-content: center;align-items: center; color: white;">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </div>
+                        <div
+                            style="background-color: orangered; padding: 10px; border-radius: 50%; display: flex; justify-content: center;align-items: center; color: white;">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        <div
+                            style="background-color: darkblue; padding: 10px; border-radius: 50%; display: flex; justify-content: center;align-items: center; color: white;">
+                            <i class="fa-brands fa-facebook"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="card-container">
+            <div class="card">
+                <div class="image-container">
+                    <img src="./images/produts2.jpg">
+                </div>
+                <div class="description">
+                    <div class="about">
+                        <h1>Harish</h1>
+                        <p class="para">---Mern Stack Developer---</p>
+                        <p>Hi,im Mern Stack Developer i used to create dynamic website</p>
+                    </div>
+                    <div class="social">
+                        <button class="linkdin">Linked in <i class="fa-brands fa-linkedin"></i></button>
+                        <button class="twitter">Twitter <i class="fa-brands fa-x-twitter"></i></button>
+                        <button class="instagram">Instagram <i class="fa-brands fa-instagram"></i></button>
+                        <button class="facebook">Facebook <i class="fa-brands fa-facebook"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hidden-card">
+
+                <img src="./images/produts2.jpg" />
+                <div class="overlay">
+                    <h2 style="margin-bottom: 0px;">Vishal</h2>
+                    <h5 style="margin-top: 5px;">---Full Stack Developer---</h5>
+                    <div class="icons">
+                        <div
+                            style="background-color: blue; padding: 10px; border-radius: 50%; display: flex; justify-content: center;align-items: center; color: white;">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </div>
+                        <div
+                            style="background-color: black; padding: 10px; border-radius: 50%; display: flex; justify-content: center;align-items: center; color: white;">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </div>
+                        <div
+                            style="background-color: orangered; padding: 10px; border-radius: 50%; display: flex; justify-content: center;align-items: center; color: white;">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        <div
+                            style="background-color: darkblue; padding: 10px; border-radius: 50%; display: flex; justify-content: center;align-items: center; color: white;">
+                            <i class="fa-brands fa-facebook"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="card-container">
+            <div class="card">
+                <div class="image-container">
+                    <img src="./images/products3.jpg">
+                </div>
+                <div class="description">
+                    <div class="about">
+                        <h1>Aadhavan </h1>
+                        <p class="para">---Full Stack Java Developer---</p>
+                        <p>Hi,im Full Stack Java Developer i used to create dynamic website</p>
+                    </div>
+                    <div class="social">
+                        <button class="linkdin">Linked in <i class="fa-brands fa-linkedin"></i></button>
+                        <button class="twitter">Twitter <i class="fa-brands fa-x-twitter"></i></button>
+                        <button class="instagram">Instagram <i class="fa-brands fa-instagram"></i></button>
+                        <button class="facebook">Facebook <i class="fa-brands fa-facebook"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hidden-card">
+
+                <img src="./images/products3.jpg" />
+                <div class="overlay">
+                    <h2 style="margin-bottom: 0px;">Vishal</h2>
+                    <h5 style="margin-top: 5px;">---Full Stack Developer---</h5>
+                    <div class="icons">
+                        <div
+                            style="background-color: blue; padding: 10px; border-radius: 50%; display: flex; justify-content: center;align-items: center; color: white;">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </div>
+                        <div
+                            style="background-color: black; padding: 10px; border-radius: 50%; display: flex; justify-content: center;align-items: center; color: white;">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </div>
+                        <div
+                            style="background-color: orangered; padding: 10px; border-radius: 50%; display: flex; justify-content: center;align-items: center; color: white;">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        <div
+                            style="background-color: darkblue; padding: 10px; border-radius: 50%; display: flex; justify-content: center;align-items: center; color: white;">
+                            <i class="fa-brands fa-facebook"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="card-container">
+            <div class="card">
+                <div class="image-container">
+                    <img src="./images/products4.jpg">
+                </div>
+                <div class="description">
+                    <div class="about">
+                        <h1>Surya</h1>
+                        <p class="para">---Full Stack Python Developer---</p>
+                        <p>Hi,im Full Stack Python Developer i used to create dynamic website</p>
+                    </div>
+                    <div class="social">
+                        <button class="linkdin">Linked in <i class="fa-brands fa-linkedin"></i></button>
+                        <button class="twitter">Twitter <i class="fa-brands fa-x-twitter"></i></button>
+                        <button class="instagram">Instagram <i class="fa-brands fa-instagram"></i></button>
+                        <button class="facebook">Facebook<i class="fa-brands fa-facebook"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden-card">
+
+                <img src="./images/products4.jpg" />
+                <div class="overlay">
+                    <h2 style="margin-bottom: 0px;">Vishal</h2>
+                    <h5 style="margin-top: 5px;">---Full Stack Developer---</h5>
+                    <div class="icons">
+                        <div
+                            style="background-color: blue; padding: 10px; border-radius: 50%; display: flex; justify-content: center;align-items: center; color: white;">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </div>
+                        <div
+                            style="background-color: black; padding: 10px; border-radius: 50%; display: flex; justify-content: center;align-items: center; color: white;">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </div>
+                        <div
+                            style="background-color: orangered; padding: 10px; border-radius: 50%; display: flex; justify-content: center;align-items: center; color: white;">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        <div
+                            style="background-color: darkblue; padding: 10px; border-radius: 50%; display: flex; justify-content: center;align-items: center; color: white;">
+                            <i class="fa-brands fa-facebook"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="card-container">
+            <div class="card">
+                <div class="image-container">
+                    <img src="./images/products5.jpg">
+                </div>
+                <div class="description">
+                    <div class="about">
+                        <h1>Arun </h1>
+                        <p class="para">---Front end Developer---</p>
+                        <p>Hi,im Front end Developer i used to create dynamic website</p>
+                    </div>
+                    <div class="social">
+                        <button class="linkdin">Linked in <i class="fa-brands fa-linkedin"></i></button>
+                        <button class="twitter">Twitter <i class="fa-brands fa-x-twitter"></i></button>
+                        <button class="instagram">Instagram <i class="fa-brands fa-instagram"></i></button>
+                        <button class="facebook">Facebook <i class="fa-brands fa-facebook"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden-card">
+
+                <img src="./images/products5.jpg" />
+                <div class="overlay">
+                    <h2 style="margin-bottom: 0px;">Vishal</h2>
+                    <h5 style="margin-top: 5px;">---Full Stack Developer---</h5>
+                    <div class="icons">
+                        <div
+                            style="background-color: blue; padding: 10px; border-radius: 50%; display: flex; justify-content: center;align-items: center; color: white;">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </div>
+                        <div
+                            style="background-color: black; padding: 10px; border-radius: 50%; display: flex; justify-content: center;align-items: center; color: white;">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </div>
+                        <div
+                            style="background-color: orangered; padding: 10px; border-radius: 50%; display: flex; justify-content: center;align-items: center; color: white;">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        <div
+                            style="background-color: darkblue; padding: 10px; border-radius: 50%; display: flex; justify-content: center;align-items: center; color: white;">
+                            <i class="fa-brands fa-facebook"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="card-container">
+            <div class="card">
+                <div class="image-container">
+                    <img src="./images/products6.jpg">
+                </div>
+                <div class="description">
+                    <div class="about">
+                        <h1>Vidhyan</h1>
+                        <p class="para">---Backend Developer---</p>
+                        <p>Hi,im Backend Developer i used to create dynamic website</p>
+                    </div>
+                    <div class="social">
+                        <button class="linkdin">Linked in <i class="fa-brands fa-linkedin"></i></button>
+                        <button class="twitter">Twitter <i class="fa-brands fa-x-twitter"></i></button>
+                        <button class="instagram">Instagram <i class="fa-brands fa-instagram"></i></button>
+                        <button class="facebook">Facebook <i class="fa-brands fa-facebook"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden-card">
+
+                <img src="./images/products6.jpg" />
+                <div class="overlay">
+                    <h2 style="margin-bottom: 0px;">Vishal</h2>
+                    <h5 style="margin-top: 5px;">---Full Stack Developer---</h5>
+                    <div class="icons">
+                        <div
+                            style="background-color: blue; padding: 10px; border-radius: 50%; display: flex; justify-content: center;align-items: center; color: white;">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </div>
+                        <div
+                            style="background-color: black; padding: 10px; border-radius: 50%; display: flex; justify-content: center;align-items: center; color: white;">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </div>
+                        <div
+                            style="background-color: orangered; padding: 10px; border-radius: 50%; display: flex; justify-content: center;align-items: center; color: white;">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        <div
+                            style="background-color: darkblue; padding: 10px; border-radius: 50%; display: flex; justify-content: center;align-items: center; color: white;">
+                            <i class="fa-brands fa-facebook"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="card-container">
+            <div class="card">
+                <div class="image-container">
+                    <img src="./images/products7.jpg">
+                </div>
+                <div class="description">
+                    <div class="about">
+                        <h1>Aarav </h1>
+                        <p class="para">---React Developer---</p>
+                        <p>Hi,im React Developer i used to create dynamic website</p>
+                    </div>
+                    <div class="social">
+                        <button class="linkdin">Linked in <i class="fa-brands fa-linkedin"></i></button>
+                        <button class="twitter">Twitter <i class="fa-brands fa-x-twitter"></i></button>
+                        <button class="instagram">Instagram <i class="fa-brands fa-instagram"></i></button>
+                        <button class="facebook">Facebook <i class="fa-brands fa-facebook"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden-card">
+
+                <img src="./images/products7.jpg" />
+                <div class="overlay">
+                    <h2 style="margin-bottom: 0px;">Vishal</h2>
+                    <h5 style="margin-top: 5px;">---Full Stack Developer---</h5>
+                    <div class="icons">
+                        <div
+                            style="background-color: blue; padding: 10px; border-radius: 50%; display: flex; justify-content: center;align-items: center; color: white;">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </div>
+                        <div
+                            style="background-color: black; padding: 10px; border-radius: 50%; display: flex; justify-content: center;align-items: center; color: white;">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </div>
+                        <div
+                            style="background-color: orangered; padding: 10px; border-radius: 50%; display: flex; justify-content: center;align-items: center; color: white;">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        <div
+                            style="background-color: darkblue; padding: 10px; border-radius: 50%; display: flex; justify-content: center;align-items: center; color: white;">
+                            <i class="fa-brands fa-facebook"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+       
+
+        <div class="card-container">
+            <div class="card">
+                <div class="image-container">
+                    <img src="./images/products8.jpg">
+                </div>
+                <div class="description">
+                    <div class="about">
+                        <h1>Raghav </h1>
+                        <p class="para">---Angular Developer---</p>
+                        <p>Hi,im Angular Developer i used to create dynamic website</p>
+                    </div>
+                    <div class="social">
+                        <button class="linkdin">Linked in <i class="fa-brands fa-linkedin"></i></button>
+                        <button class="twitter">Twitter <i class="fa-brands fa-x-twitter"></i></button>
+                        <button class="instagram">Instagram <i class="fa-brands fa-instagram"></i></button>
+                        <button class="facebook">Facebook <i class="fa-brands fa-facebook"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden-card">
+
+                <img src="./images/products8.jpg" />
+                <div class="overlay">
+                    <h2 style="margin-bottom: 0px;">Vishal</h2>
+                    <h5 style="margin-top: 5px;">---Full Stack Developer---</h5>
+                    <div class="icons">
+                        <div
+                            style="background-color: blue; padding: 10px; border-radius: 50%; display: flex; justify-content: center;align-items: center; color: white;">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </div>
+                        <div
+                            style="background-color: black; padding: 10px; border-radius: 50%; display: flex; justify-content: center;align-items: center; color: white;">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </div>
+                        <div
+                            style="background-color: orangered; padding: 10px; border-radius: 50%; display: flex; justify-content: center;align-items: center; color: white;">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        <div
+                            style="background-color: darkblue; padding: 10px; border-radius: 50%; display: flex; justify-content: center;align-items: center; color: white;">
+                            <i class="fa-brands fa-facebook"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+
+        <div class="card-container">
+            <div class="card">
+                <div class="image-container">
+                    <img src="./images/products9.jpg">
+                </div>
+                <div class="description">
+                    <div class="about">
+                        <h1>Manoj </h1>
+                        <p class="para">---HTML Developer---</p>
+                        <p>Hi,im HTML Developer i used to create dynamic website</p>
+                    </div>
+                    <div class="social">
+                        <button class="linkdin">Linked in <i class="fa-brands fa-linkedin"></i></button>
+                        <button class="twitter">Twitter <i class="fa-brands fa-x-twitter"></i></button>
+                        <button class="instagram">Instagram <i class="fa-brands fa-instagram"></i></button>
+                        <button class="facebook">Facebook <i class="fa-brands fa-facebook"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden-card">
+
+                <img src="./images/products9.jpg" />
+                <div class="overlay">
+                    <h2 style="margin-bottom: 0px;">Vishal</h2>
+                    <h5 style="margin-top: 5px;">---Full Stack Developer---</h5>
+                    <div class="icons">
+                        <div
+                            style="background-color: blue; padding: 10px; border-radius: 50%; display: flex; justify-content: center;align-items: center; color: white;">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </div>
+                        <div
+                            style="background-color: black; padding: 10px; border-radius: 50%; display: flex; justify-content: center;align-items: center; color: white;">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </div>
+                        <div
+                            style="background-color: orangered; padding: 10px; border-radius: 50%; display: flex; justify-content: center;align-items: center; color: white;">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        <div
+                            style="background-color: darkblue; padding: 10px; border-radius: 50%; display: flex; justify-content: center;align-items: center; color: white;">
+                            <i class="fa-brands fa-facebook"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+       
+
+        <div class="card-container">
+            <div class="card">
+                <div class="image-container">
+                    <img src="./images/products10.jpg">
+                </div>
+                <div class="description">
+                    <div class="about">
+                        <h1>Rithvik </h1>
+                        <p class="para">---Word Press Developer---</p>
+                        <p>Hi,im Word Press Developer i used to create dynamic website</p>
+                    </div>
+                    <div class="social">
+                        <button class="linkdin">Linked in <i class="fa-brands fa-linkedin"></i></button>
+                        <button class="twitter">Twitter <i class="fa-brands fa-x-twitter"></i></button>
+                        <button class="instagram">Instagram <i class="fa-brands fa-instagram"></i></button>
+                        <button class="facebook">Facebook <i class="fa-brands fa-facebook"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden-card">
+
+                <img src="./images/products10.jpg" />
+                <div class="overlay">
+                    <h2 style="margin-bottom: 0px;">Vishal</h2>
+                    <h5 style="margin-top: 5px;">---Full Stack Developer---</h5>
+                    <div class="icons">
+                        <div
+                            style="background-color: blue; padding: 10px; border-radius: 50%; display: flex; justify-content: center;align-items: center; color: white;">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </div>
+                        <div
+                            style="background-color: black; padding: 10px; border-radius: 50%; display: flex; justify-content: center;align-items: center; color: white;">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </div>
+                        <div
+                            style="background-color: orangered; padding: 10px; border-radius: 50%; display: flex; justify-content: center;align-items: center; color: white;">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        <div
+                            style="background-color: darkblue; padding: 10px; border-radius: 50%; display: flex; justify-content: center;align-items: center; color: white;">
+                            <i class="fa-brands fa-facebook"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+       
+    </div>
+</body>
+
+</html>

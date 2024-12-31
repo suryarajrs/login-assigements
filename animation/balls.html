@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balls</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+
+        .container {
+            position: relative;
+            width: 99vw;
+            height: 99vh;
+            border: 5px solid white;
+    
+        }
+
+        .ball {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 1px solid white;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .red {
+            background-color: red;
+            animation: redball 3s alternate infinite linear;
+            position: absolute;
+        }
+
+        .blue {
+            background-color: blue;
+            animation: blueball 3s alternate infinite ease; 
+            position: absolute;
+
+        }
+
+        .green {
+            background-color: green;
+            transition-timing-function: ease-in;
+            animation: greenball 3s alternate infinite ease-in;
+            position: absolute;
+
+
+        }
+
+        .yellow {
+            background-color: yellow;
+                
+            transition-timing-function: ease-out;
+            animation: yellowball 3s alternate infinite ease-out;
+            position: absolute;
+
+
+
+        }
+
+        .purple {
+            background-color: purple;
+            transition-timing-function: ease-in-out;
+            animation: purpleball 3s alternate infinite ease-in-out;
+            position: absolute;
+
+        }
+
+        @keyframes redball {
+            0% {
+                left: 0%;
+                top:0%
+            }
+
+            50% {
+                 left: 50%;
+                 top: 90%;
+              
+            }
+
+            100% {
+                left: 94%;
+                top: 0%;
+               
+            }
+        }
+
+        @keyframes yellowball {
+            0% {
+                left: 0%;
+                top:10%
+            }
+
+            50% {
+                 left: 50%;
+                 top: 89%;
+              
+            }
+
+            100% {
+                left: 94%;
+                top: 10%;
+               
+            }
+        }
+
+        @keyframes blueball {
+            0% {
+                left: 0%;
+                top:15%
+            }
+
+            50% {
+                 left: 50%;
+                 top: 89%;
+              
+            }
+
+            100% {
+                left: 94%;
+                top: 15%;
+               
+            }
+        }
+        @keyframes purpleball {
+            0% {
+                left: 0%;
+                top:20%
+            }
+
+            50% {
+                 left: 50%;
+                 top: 89%;
+              
+            }
+
+            100% {
+                left: 94%;
+                top: 20%;
+               
+            }
+        }
+
+        @keyframes greenball {
+            0% {
+                left: 0%;
+                top:25%
+            }
+
+            50% {
+                 left: 50%;
+                 top: 89%;
+              
+            }
+
+            100% {
+                left: 94%;
+                top: 25%;
+               
+            }
+        }
+
+      
+
+       
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="ball red">RED</div>
+        <div class="ball yellow">YELLOW</div>
+        <div class="ball blue">BLUE</div>
+        <div class="ball purple">PURPLE</div>
+        <div class="ball green">GREEN</div>
+
+    </div>
+</body>
+
+</html>

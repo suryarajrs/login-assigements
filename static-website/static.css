@@ -1,0 +1,189 @@
+body {
+    background-color: rgb(247, 247, 247);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 25px;
+
+}
+
+.nav-ul .nav-li {
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    padding: 0 15px 0px 15px;
+}
+
+.nav-ul .nav-li a {
+    text-decoration: none;
+}
+
+.nav-ul .nav-li a:hover {
+    text-decoration: underline;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    border: none;
+}
+
+.logo-container button {
+    padding: 10px 25px 10px 25px;
+    border-radius: 25px;
+    background-color: transparent;
+    font-weight: 600;
+    margin-right: 20px;
+}
+
+.logo-container button:hover {
+    background-color: lightgrey;
+}
+
+i:hover {
+    color: red;
+}
+
+.main {
+    background-image: url("./images/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-container {
+    color: white;
+    padding: 50px;
+    max-width: 50%;
+    text-align: center;
+}
+
+.text-container button {
+    padding: 10px 25px 10px 25px;
+    border-radius: 25px;
+    font-weight: 600;
+    margin-right: 20px;
+}
+
+.text-container button:hover {
+    background-color: lightgrey;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    border-top-left-radius: 150px;
+    margin-top: 55px;
+    padding: 45px 0px 45px 0px;
+}
+
+.toolm5-footer-container {
+    max-width: 500px;
+    margin-left: 70px;
+    margin-top: 50px;
+}
+
+.newsletter-footer-container {
+    margin-right: 220px;
+}
+
+.link-footer-container {
+    margin-top: 50px;
+}
+
+.newsletter-footer-container {
+    margin-top: 40px;
+}
+
+.about-section {
+    display: flex;
+    margin-top: 55px;
+    margin-left: 25px;
+}
+
+.about {
+    max-width: 50%;
+
+}
+
+.about button {
+    padding: 10px 25px 10px 25px;
+    border-radius: 25px;
+    background-color: transparent;
+    font-weight: 600;
+    margin-right: 20px;
+}
+
+.about h1 {
+    font-size: 55px;
+
+}
+
+.about-img {
+    width: 790px;
+    height: 500px;
+    border-radius: 72% 42% 81% 30% / 52% 42% 51% 30%;
+    overflow: hidden;
+    margin-left: 50px;
+}
+
+.digital-section{
+    display: flex;
+    margin-top: 55px;
+    gap: 25px;
+}
+
+.section-1{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(2,19,26);
+    padding: 20px;
+    border-radius: 20px;
+    color: white;
+    flex-basis: 50%;
+    align-items: center;
+    text-align: start;
+}
+.section-2{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(2,40,55);
+    padding: 20px;
+    border-radius: 20px;
+    flex-basis: 50% ;
+    align-items: center;
+    color:white;
+    
+}
+.section-1 img{
+   height: 600px;
+   width: 100%;
+    border-radius: 20px;
+}
+.section-2 img{
+    height: 600px;
+    width: 100%;
+    border-radius: 20px;
+}
+.section-2  button {
+    padding: 10px 25px 10px 25px;
+    border-radius: 25px;
+    font-weight: 600;
+    margin-right: 20px;
+    align-self: flex-end;
+    margin-top: 20px;
+}

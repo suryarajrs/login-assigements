@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ball bouncing</title>
+    <style>
+        body {
+            background-color: aqua;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            /* background-color: red; */
+        }
+
+        .ball {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border-radius: 50%;
+            box-shadow: inset 5px -15px 15px rgba(0, 0, 0, 0.9);
+            position: absolute;
+            top: 0px;
+            left: 50%;
+            animation: bounce 1.2s infinite linear;
+
+        }
+
+        .shadow {
+            width: 70px;
+            height: 10px;
+            background-color: rgba(0, 0, 0, 0.3);
+            border-radius: 50%;
+            position: absolute;
+            bottom: 95px;
+            left: 50%;
+            transform: translateX(-50%) scale(1);
+            animation: shadow 1.2s infinite linear;
+        }
+
+        @keyframes bounce {
+
+            0% {
+                transform: translateX(-50%) translateY(0);
+            }
+
+            50% {
+                transform: translateX(-50%) translateY(-140px);
+
+            }
+
+            100% {
+                transform: translateX(-50%) translateY(0);
+            }
+
+        }
+
+        @keyframes shadow {
+
+            0% ,100%{
+                transform: translateX(-50%) scale(0.6);
+                opacity: 0.9;
+            }
+
+
+            50% {
+                transform: translateX(-50%) scale(1.5);
+                opacity: 0.5;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="ball"></div>
+        <div class="shadow"></div>
+    </div>
+</body>
+
+</html>

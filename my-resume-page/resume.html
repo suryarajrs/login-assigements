@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+           padding: 10px;
+        }
+
+        ul{
+            display: flex;
+            align-items: center;
+   
+        }
+
+        li{
+            list-style-type: none;
+            margin-right: 25px;
+            border-right: 2px solid gray;
+            padding-right: 25px;
+            
+        }
+
+        .logo{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .logo div{
+            height: 30px;
+            width: 30px;
+            background-color: orange;
+            border-radius: 50%;
+            margin-left: 5px;
+
+        }
+
+        .main-container{
+            display: flex;
+            height: 70vh;
+            justify-content: center;
+            align-items: center;
+        }
+        .wapper{
+            display: flex;
+            max-width: 800px;
+        }
+        .img-container{
+            border-right: 2px solid gray;;
+        }
+
+        .img-container img{
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            margin-right: 15px;
+            margin-top: 15px;
+        }
+        .about-container{
+            margin-left: 15px;
+            max-width: 420px;
+        }
+        button{
+            border-radius: 30px;
+            margin: 15px;
+            color: white;
+            padding: 10px 25px 10px 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <div></div>
+            <h4 style="margin-top: 5px;">Virat Kohli ❤️</h4>
+            <p>Editor</p>
+        </div>
+
+        <ul>
+            <li>Resume</li>
+            <li>Project</li>
+            <li style="border: none;">Contact</li>
+        </ul>
+    </nav>
+  
+  <div class="main-container">
+
+      <div class="wapper">
+          <div class="img-container">
+              <img src="./images/vkDp.jpg" />
+          </div>
+          <div class="about-container">
+              <h1>Hello</h1>
+              <h4 style="margin-bottom: 5px;">A bit About Me</h4>
+              <p style="text-align: justify;font-family: 'Pacifico', cursive; font-size: 16px;">Virat Kohli 💖, the Indian cricketer and former captain of the Indian national team , is known for his
+                  exceptional talent and unmatched passion for the game. He has made a name for himself as one of the
+                  greatest batsmen in the world and has several records to his name. But, Virat Kohli is more than just a
+                  cricketer, he is also known for his real-life incidents that show his character and personality.
+              </p>
+  
+              <button style="background-color: orange;">Resume</button>
+              <button style="background-color: red;">Projects</button>
+              <button style="background-color: black;">Contact</button>
+  
+          </div>
+      </div>
+  </div>
+</body>
+
+</html>

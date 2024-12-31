@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Article</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		nav h1{
+			padding: 10px;
+			color: white;
+		}
+		.article1 , .article2{
+			margin-top: 40px;
+			
+		}
+
+		.article1{
+			animation: leftToRight 1s ease-in-out;
+		}
+		.article2{
+			animation: RightToLeft 1s ease-in-out;
+		}
+		nav{
+			background-color: blue;
+			display: flex;
+			justify-content: space-between;
+			padding: 15px 25px 10px 25px;
+		}
+		ul{
+			display: flex;
+			gap:20px;
+			list-style: none;
+			animation: topToBottom 1s ease-in-out;
+		}
+		ul li {
+			padding: 10px;
+			cursor: pointer;
+			color: white;
+		}
+		
+		ul li:hover{
+			background-color: aliceblue;
+			color: black;
+		}
+  
+		 @keyframes leftToRight {
+			0%{
+				transform: translateX(-110%);
+			}
+			100%{
+				transform: translateX(0);
+			}
+		 }
+		 @keyframes RightToLeft {
+			0%{
+				transform: translateX(110%);
+			}
+			100%{
+				transform: translateX(0);
+			}
+		 }
+		 @keyframes topToBottom {
+			0%{
+				transform: translatey(-110%);
+			}
+			100%{
+				transform: translatey(0);
+			}
+		 }
+
+
+
+	</style>
+</head>
+
+<body>
+
+	<nav>
+		<h1>Logo</h1>
+		<div class="nav-links">
+			<ul>
+				<li>HOME</li>
+				<li>ABOUT</li>
+				<li>SERVICE</li>
+				<li>CONTACT</li>
+			</ul>
+		</div>
+	</nav>
+	
+		
+	<div class="article1">
+		<h1>ARTICLE 1</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non exercitationem quia consequuntur corporis
+			deserunt illo consectetur sunt inventore neque sit obcaecati aliquid est quas minima rerum, aperiam
+			voluptate?error ratione quisquam, voluptatibus, maxime odio non ut. Qui vitae eos delectus quis, numquam
+			molestias consequuntur. Voluptatum unde rerum vel autem aut modi voluptatibus totam, odit aspernatur dolorum! Sunt
+			nisi ipsa sed voluptate voluptatem nobis deleniti animi cum reiciendis sint odio quos esse laboriosam ut ex
+			dolores nam, ea reprehenderit! Laborum nesciunt voluptas, error tenetur necessitatibus doloremque sint at
+			aliquam. Excepturi alias laborum repudiandae odio aspernatur. Corrupti officiis, laboriosam ratione ut
+			consequatur unde perferendis assumenda corporis? Pariatur ut laborum omnis. Unde iusto ab, odio deleniti id
+			corrupti repellat aliquam voluptas fugiat quod nisi magnam. Esse velit numquam reiciendis?Lorem, ipsum dolor sit amet consectetur adipisicing
+			elit. Distinctio, voluptatibus? Deleniti, quos quas? Illum, sit non minima voluptatum repudiandae neque?
+			Eaque distinctio consectetur eligendi, ad vero blanditiis consequatur, veritatis dolores, corporis iure
+			nesciunt! Incidunt, laboriosam? Nam, architecto asperiores. Tenetur eius animi maxime odio eos quidem
+			inventore cumque dicta esse magnam!
+		<p>
+
+	</div>
+	<div class="article2">
+		<h1>ARTICLE 2</h1>
+		<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, nisi nemo! Asperiores quo obcaecati
+			dicta, laboriosam, aliquid ipsa repellat quaerat dolores quas sit id tempore. Recusandae voluptatum sint
+			similique in error explicabo neque sunt tenetur minus corrupti exercitationem id sit excepturi ducimus, iste
+			distinctio, esse quaerat quas magnam, aliquam odit. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+			Ea minus distinctio tempore sed neque dignissimos numquam placeat explicabo temporibus quaerat accusamus
+			quod, veniam sint consectetur beatae earum doloribus est nesciunt, animi similique laudantium velit
+			recusandae voluptate commodi. Nemo, magnam. Ullam dolor quam molestias cum asperiores sunt minima odit
+			doloribus adipisci reiciendis, quibusdam optio aliquid distinctio et magnam iste id maxime eveniet eius.
+			Praesentium officiis dolor perspiciatis? Consequatur cum consequuntur sunt veritatis illum iusto tempore
+			error ratione quisquam, voluptatibus, maxime odio non ut. Qui vitae eos delectus quis, numquam molestias
+			consequuntur. Voluptatum unde rerum vel autem aut modi voluptatibus totam, odit aspernatur dolorum! Sunt
+			nisi ipsa sed voluptate voluptatem nobis deleniti animi cum reiciendis sint odio quos esse laboriosam ut ex
+			dolores nam, ea reprehenderit! Laborum nesciunt voluptas, error tenetur necessitatibus doloremque sint at
+			aliquam. Excepturi alias laborum repudiandae odio aspernatur. Corrupti officiis, laboriosam ratione ut
+			consequatur unde perferendis assumenda corporis?
+		<p>
+	</div>
+
+</body>
+
+</html>

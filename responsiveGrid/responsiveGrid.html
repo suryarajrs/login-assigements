@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resonsive-Grid</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            background-color: #f3f3f3;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+
+        }
+
+        .grid-container {
+
+            display: grid;
+            width: 1200px;
+
+            gap: 20px;
+            grid-template-columns: 1.2fr 1fr 1fr 1fr;
+            grid-template-rows: 450px 380px 250px;
+
+            grid-template-areas: 'animals art beauty design'
+                'mens womens womens tattoo'
+                'mens travel weddings tattoo';
+        }
+
+        .animals {
+            background-image: url('./images/animals.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            overflow: hidden;
+
+        }
+        .animals::before {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            content: "Animals";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            z-index: 1;
+        }
+
+        
+
+        .art {
+            background-image: url('./images/arts.jpg');
+            background-size: cover;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .art::before {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            content: "Arts";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            z-index: 1;
+        }
+
+        .beauty {
+            background-image: url('./images/beauty.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .beauty::before {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            content: "Beauty";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            z-index: 1;
+        }
+
+        .design {
+            background-image: url('./images/design.jpg');
+            background-size: cover;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .design::before {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            content: "Design";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            z-index: 1;
+        }
+
+        .womens {
+            background-image: url('./images/womensFashon2.jpg');
+            background-size: cover;
+            position: relative;
+            overflow: hidden;
+        }
+        .womens::before {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            content: "Women's Fashion";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            z-index: 1;
+            font-size: 35px;
+        }
+
+        .mens {
+            background: url('./images/mensfashion.png');
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            overflow: hidden;
+        }
+
+        .mens::before {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            content: "Men's Fashion";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            z-index: 1;
+            font-size: 35px;
+        }
+
+        .tattoo {
+            background-image: url('./images/tattoos.jpg');
+            background-size: cover;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .tattoo::before {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            content: "Tattoos";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            z-index: 1;
+        }
+
+        .travel {
+            background-image: url('./images/travel.jpg');
+            background-size: cover;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .travel::before {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            content: "Travels";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            z-index: 1;
+        }
+
+        .weddings {
+            background-image: url('./images/wedding.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
+            overflow: hidden;
+
+        }
+
+        .weddings::before {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            content: "Weddings";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            z-index: 1;
+            
+        }
+
+
+        #animals {
+
+            grid-area: animals;
+            border-radius: 10px;
+            background-color: antiquewhite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 44px;
+
+
+
+        }
+
+        #art {
+            grid-area: art;
+            border-radius: 10px;
+            background-color: rgb(146, 105, 52);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 44px;
+
+        }
+
+        #beauty {
+            grid-area: beauty;
+            border-radius: 10px;
+            background-color: rgb(77, 52, 2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 44px;
+        }
+
+        #design {
+            grid-area: design;
+            border-radius: 10px;
+            background-color: blueviolet;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 44px;
+        }
+
+        #womens {
+            grid-area: womens;
+            border-radius: 10px;
+            background-color: rgb(130, 26, 148);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 44px;
+        }
+
+        #mens {
+            grid-area: mens;
+            border-radius: 10px;
+            background-color: antiquewhite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 44px;
+        }
+
+        #tattoo {
+            grid-area: tattoo;
+            border-radius: 10px;
+            background-color: crimson;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 44px;
+        }
+
+        #travel {
+            grid-area: travel;
+            border-radius: 10px;
+            background-color: darkgrey;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 44px;
+        }
+
+        #weddings {
+            grid-area: weddings;
+            border-radius: 10px;
+            background-color: slategrey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 44px;
+
+        }
+
+        @media(max-width:1150px) {
+
+            .grid-container {
+
+                display: grid;
+                gap: 20px;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 450px 250px 250px 250px 580px;
+
+                grid-template-areas: 'womens womens'
+                    ' mens tattoo '
+                    ' travel weddings'
+                    'art beauty'
+                    'design animals';
+            }
+
+
+        }
+
+        @media(max-width: 850px) {
+
+            .grid-container {
+
+                display: grid;
+                /* width: 1200px; */
+                gap: 20px;
+                grid-template-columns: 1fr;
+                grid-template-rows: 450px 250px 350px 350px 180px 250px 350px 350px 580px;
+
+                grid-template-areas: 'womens'
+                    'tattoo'
+                    'mens'
+                    'weddings'
+                    'travel'
+                    'beauty'
+                    'art'
+                    'design'
+                    'animals';
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="grid-container">
+        <div class="animals" id="animals">
+          
+        </div>
+        <div class="art" id="art">
+          
+        </div>
+        <div class="beauty" id="beauty">
+          
+        </div>
+        <div class="design" id="design">
+           
+        </div>
+        <div class="womens" id="womens">
+          
+        </div>
+        <div class="mens" id="mens">
+          
+        </div>
+        <div class="tattoo" id="tattoo">
+          
+        </div>
+        <div class="travel" id="travel">
+           
+        </div>
+        <div class="weddings" id="weddings">
+         
+        </div>
+    </div>
+
+</body>
+
+</html>
